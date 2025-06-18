@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="EstiloT.css">
+
+  
+    <title>ETS</title>
+</head>
+<body>  
+ <nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="Index.html">
+      <img src="imgss/Jeringa.jpeg" alt="Logo" width="50" height="45" class="me-2">
+      Enfermedades de Transmisión Sexual
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Index.html">Inicio</a></li>
+          
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Enfermedades
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">VIH</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <section>
+    <div class="vihttittle">
+      <h1>VIH</h1>
+    </div>
+  </section>
+
+    <article>
+
+       <div class="contenedor">
+  <div class="zona-izquierda fade-in">
+    <img src="imgss/vihmorado2.jpg" alt="Vih enfermedadd" class="imagen-banner">
+    <p class="texto-debajo">El VIH, o Virus de la Inmunodeficiencia Humana, es un retrovirus que ataca al sistema inmunológico del ser humano, 
+      debilitando su capacidad para combatir infecciones y enfermedades.  se transmite a través del contacto con ciertos fluidos corporales 
+      de una persona infectada, como sangre, semen, líquido preseminal, secreciones vaginales y leche materna. La transmisión puede ocurrir 
+      por vía sexual, sanguínea o de madre a hijo/a. Sin tratamiento, la infección por VIH puede avanzar 
+      hacia el SIDA, la forma más avanzada de la enfermedad. El VIH actúa destruyendo un tipo específico de glóbulos blancos llamados linfocitos CD4 o células T, 
+      que son esenciales para una respuesta inmunitaria fuerte.
+      Con el tiempo, si no se trata, el VIH puede destruir tantas 
+      de estas células que el cuerpo ya no puede combatir infecciones ni enfermedades. 
+      Cuando esto ocurre, el VIH avanza a una etapa más grave conocida como SIDA 
+      (Síndrome de Inmunodeficiencia Adquirida).</p>
+  </div>
+
+  <div class="zona-derecha fade-in-delayed">
+    <div class="texto-sobre-video">Virus de Inmunodeficiencia Humana</div>
+    <div class="video-wrapper">
+      <video autoplay loop muted class="video-virus">
+        <source src="videocreisi/vihvideo.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+     <section class="cardvih-carousel">
+  <div class="carousel-track-container">
+    <div class="cardvih-carousel-track">
+      <div class="cardvih"><img src="imgss/vih1.jpg"></div>
+      <div class="cardvih"><img src="imgss/vih piel.jpeg"></div>
+      <div class="cardvih"><img src="imgss/vih2.jpg"></div>
+      <div class="cardvih"><img src="imgss/vihcraneo.jpeg"></div>
+      <div class="cardvih"><img src="imgss/condonvih.jpeg"></div>
+      <div class="cardvih"><img src="imgss/erupcionvih.jpg"></div>
+      <div class="cardvih"><img src="imgss/hivtest.jpeg"></div>
+      <div class="cardvih"><img src="imgss/piernasvih.jpg"></div>
+    </div>
+  </div>
+  </section>
+
+  <section> 
+     <h1 class="titulo-principal">Etapas del VIH</h1>
+
+  <div class="timeline-container">
+    <div class="timeline-item-vih">
+      <img src="imgss/etapaagudavih.png" alt="Etapa Aguda" />
+      <h3>Etapa 1: Aguda</h3>
+      <button onclick="mostrarDetalles('aguda')">Más info</button>
+    </div>
+    <div class="timeline-item-vih">
+      <img src="imgss/etapalatencia.png" alt="Latencia" />
+      <h3>Etapa 2: Latencia</h3>
+      <button onclick="mostrarDetalles('latencia')">Más info</button>
+    </div>
+    <div class="timeline-item-vih">
+      <img src="imgss/personasida.jpg" alt="SIDA" />
+      <h3>Etapa 3: SIDA</h3>
+      <button onclick="mostrarDetalles('sida')">Más info</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-descripcion"></p>
+      <button class="close-btn" onclick="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+  </section>
+   
+<section>
+<h1 class="titulo-principal-sintomas">Síntomas</h1>
+  <div class="card-container">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgss/sarpullidovih.png" alt="Síntoma 1">
+      </div>
+      <div class="flip-card-back">
+        <h2>Etapa 1: Infección Aguda</h2>
+        <br>
+        <ul>
+          <li>Fiebre</li>
+           <li>Dolor de garganta</li>
+            <li>Ganglios inflamados (en cuello, axilas o ingles)</li>
+             <li>Erupciones en la piel</li>
+              <li>Úlceras en la boca o en los genitales</li>
+               <li>Dolor muscular y articular</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgss/gangliosinflamados.png" alt="Síntoma 2">
+      </div>
+      <div class="flip-card-back">
+         <h2>Etapa 2: Latencia</h2>
+         <br>
+        <ul>
+          <li>No hay síntomas visibles en la mayoría de los casos</li>
+           <li>El virus sigue activo pero se multiplica lentamente</li>
+            <li>Ganglios inflamados (en cuello, axilas o ingles)</li>
+             <li>Pérdida leve de peso o cansancio crónico ocasional</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgss/perdidadepesovih.png" alt="Síntoma 3">
+      </div>
+      <div class="flip-card-back">
+        <h2>Etapa 3: SIDA</h2>
+        <br>
+        <ul>
+          <li>Pérdida de peso rápida</li>
+           <li>Diarrea crónica</li>
+            <li>Manchas blancas en lengua o boca</li>
+             <li>Infecciones frecuentes (neumonía, tuberculosis, etc.)</li>
+              <li>Fatiga extrema</li>
+              <li>Confusión o pérdida de memoria</li>
+              <li>Sudores nocturnos intensos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  
+
+<section class="prevencion">
+  <div class="prevencion-container">
+    <img src="imgss/condonvih.jpeg" alt="Prevención VIH" class="prev-img">
+    <div class="prev-texto">
+      <h2>Prevención del VIH</h2>
+      <p>
+        Para prevenir el VIH, es esencial el uso del preservativo, 
+        realizarse pruebas regularmente, utilizar medicamentos preventivos como la PrEP, 
+        y mantener una comunicación abierta con tu pareja. Además, evitar el uso compartido de jeringas 
+        y educarse sobre el tema son claves fundamentales.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section class="prevencion">
+  <div class="prevencion-container">
+    <img src="imgss/etapaclinica.png" alt="Prevención VIH" class="prev-img">
+    <div class="prev-texto">
+      <h2>Tratamiento del VIH</h2>
+      <p>
+       El tratamiento para la infección por VIH, conocido como Terapia Antirretroviral (TAR), 
+       consiste en tomar una combinación de medicamentos contra el VIH diariamente. 
+       Estos medicamentos evitan que el virus se replique en el cuerpo, reduciendo la carga viral 
+       y protegiendo el sistema inmunológico. Aunque el TAR no cura la infección por VIH, 
+       ayuda a las personas a vivir una vida más larga y saludable. 
+      </p>
+    </div>
+  </div>
+</section>
+
+   <div class="mensaje-ets">
+  <div class="overlay">
+    <div class="contenido-mensaje">
+      <h4><em>Las ETS ya no son un tabú. La información es salud, y todos merecemos conocerla. Porque la ignorancia sí es un riesgo real.</em></h4>
+    </div>
+  </div>
+</div>
+    </article>
+
+    <footer class="infoets-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About Us!</h2>
+        <p>ETS es una Página Web dedicada a informar, educar y romper el tabú 
+          sobre las Enfermedades de Transmisión Sexual. 
+          Buscamos generar conciencia con empatía y responsabilidad.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Enlaces rápidos</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="vih.html">VIH</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section social">
+        <h2>Redes Sociales</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank"><img src="imgss/instagram.jpg" alt="Instagram"></a>
+          <a href=" https://twitter.com" target="_blank"><img src="imgss/twitter.png" alt="Twitter"></a> 
+          <a href="https://www.facebook.com" target="_blank"><img src="imgss/facebook.jpg" alt="Facebook"></a>
+          <a href=" https://www.tiktok.com" target="_blank"><img src="imgss/tiktok.png" alt="Tiktok"></a> 
+        </div>
+        <div class="email">
+        <h5>Contacto</h5>
+        <p>📧 <a href="mailto:brithanyy.castroo@gmail.com">brithanyy.castroo@gmail.com</a></p>
+        <p>📞 +504 3368-2029</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ETS - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script>
+  const track = document.querySelector('.cardvih-carousel-track');
+  const cards = document.querySelectorAll('.cardvih-carousel .cardvih');
+  const cardWidth = cards[0].offsetWidth + 20;
+
+  let currentIndex = 0;
+  let interval;
+
+
+  function updateCarousel() {
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = 'translateX(-' + (currentIndex * cardWidth) + 'px)';
+  }
+
+  function startCarousel() {
+    interval = setInterval(function () {
+      currentIndex++;
+      updateCarousel();
+
+      if (currentIndex === cards.length) { 
+        setTimeout(function () {
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(0px)';
+          currentIndex = 0;
+        }, 500);
+      }
+    }, 2300);
+  }
+
+  function stopCarousel() {
+    clearInterval(interval);
+  }
+
+  track.addEventListener('mouseenter', stopCarousel);
+  track.addEventListener('mouseleave', startCarousel);
+
+  startCarousel();
+</script>
+<script>
+    const infoEtapas = {
+      aguda: {
+        titulo: 'Etapa 1: Infección Aguda',
+        descripcion: 'Ocurre entre las 2 a 4 semanas después de la exposición. El VIH se multiplica rápidamente y muchas personas presentan síntomas parecidos a la gripe. Se caracteriza por altos niveles de replicación viral y una rápida disminución de las células T CD4. Los síntomas pueden ser similares a los de la gripe, como fiebre, dolor de cabeza, erupciones cutáneas y ganglios linfáticos inflamados. '
+      },
+      latencia: {
+        titulo: 'Etapa 2: Fase de Latencia',
+        descripcion: 'Durante esta etapa, el virus sigue presente en el cuerpo, pero la persona puede no tener síntomas. Puede durar varios años si no se trata. A pesar de estar en latencia, el virus continúa presente en el cuerpo y puede reactivarse en cualquier momento, dando lugar a la replicación viral y, eventualmente, a la progresión de la enfermedad. '
+      },
+      sida: {
+        titulo: 'Etapa 3: SIDA',
+        descripcion: 'Etapa más avanzada del VIH. El sistema inmunológico está gravemente dañado y el cuerpo no puede luchar contra infecciones o enfermedades. El SIDA se caracteriza por la pérdida de células CD4 en la sangre, lo que hace que el sistema inmunológico se debilite y no pueda combatir adecuadamente las infecciones. Las personas con SIDA pueden desarrollar una variedad de enfermedades oportunistas, que son infecciones que aprovechan la debilidad del sistema inmunológico. '
+      }
+    };
+
+    function mostrarDetalles(etapa) {
+      const datos = infoEtapas[etapa];
+      document.getElementById('modal-titulo').textContent = datos.titulo;
+      document.getElementById('modal-descripcion').textContent = datos.descripcion;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function cerrarModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+  
+    window.onclick = function(e) {
+      const modal = document.getElementById('modal');
+      if (e.target == modal) {
+        cerrarModal();
+      }
+    }
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
